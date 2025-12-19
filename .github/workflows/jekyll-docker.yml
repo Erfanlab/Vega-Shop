@@ -42,9 +42,9 @@ jobs:
 
 
       - name: Upload Pages artifact
-  uses: actions/upload-pages-artifact@v3
-  with:
-    path: dist/apps/vega-shop
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/apps/vega-shop
 
   deploy:
     runs-on: ubuntu-latest
