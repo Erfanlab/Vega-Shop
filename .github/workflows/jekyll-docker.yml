@@ -32,7 +32,9 @@ jobs:
         run:  npm i
 
       - name: Build Nx app
-        run: npx nx build Vega-Shop --configuration=stage
+        run: npx nx build Vega-Shop --configuration=stage --base-href=/pixl2code/
+
+
 
 
       - name: Setup Pages
@@ -42,7 +44,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-             path: dist/Vega-Shop
+             path: dist/apps/Vega-Shop
 
   deploy:
     runs-on: ubuntu-latest
