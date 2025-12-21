@@ -20,7 +20,7 @@
         "styles": [
           "src/styles.css"
         ],
-        "outputPath": "dist/vega-shop"
+        "outputPath": "dist/app/vega-shop"
       },
       "configurations": {
         "production": {
@@ -29,6 +29,9 @@
               "type": "initial",
               "maximumWarning": "500kB",
               "maximumError": "1MB"
+            },
+             "stage": {
+              "baseHref": "/vega-shop/"
             },
             {
               "type": "anyComponentStyle",
