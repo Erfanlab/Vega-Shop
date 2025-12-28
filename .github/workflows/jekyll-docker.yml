@@ -32,7 +32,7 @@ jobs:
         run:  npm i
 
       - name: Build Nx app
-        run: npx nx build --base-href /Vega-Shop/
+        run: npx nx build --base-href /Vega-Shop/ 
 
 
 
@@ -47,7 +47,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/app/vega-shop
+          path: dist/app/vega-shop/
 
   deploy:
     runs-on: ubuntu-latest
