@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Nx app
         run: npx nx build vega-shop --base-href=/Vega-Shop/
-
+ 
       - name: List dist folder
         run: ls -R dist
 
