@@ -32,7 +32,8 @@ jobs:
         run:  npm i
 
       - name: Build Nx app
-        run: npx nx build vega-shop --configuration=stage
+        run: npx nx build --base-href /Vega-Shop/
+
 
 
 
