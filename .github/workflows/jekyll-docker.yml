@@ -41,8 +41,9 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/apps/vega-shop/
-
+          path: dist/app/vega-shop/
+      - name: Check base href
+        run: cat dist/apps/vega-shop/index.html | grep base
 
   deploy:
     runs-on: ubuntu-latest
