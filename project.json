@@ -17,7 +17,7 @@
           }
         ],
         "styles": ["src/styles.css"],
-        "outputPath": "dist/app/vega-shop"
+"outputPath": "dist/app/vega-shop",
       },
       "configurations": {
         "production": {
@@ -36,7 +36,8 @@
           "outputHashing": "all"
         },
         "stage": {
-          "baseHref": "/vega-shop/"
+          "baseHref": "/vega-shop/",
+          "deployUrl": "/vega-shop/"     
         },
         "development": {
           "optimization": false,
